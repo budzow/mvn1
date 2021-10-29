@@ -8,7 +8,13 @@ trigger:
 - develop
 
 pool:
-  vmImage: ubuntu-latest
+      name: Default
+      Demands:
+      - agent.name -equals "michVS2019"
+
+variables:
+- name: AGENT_USE_NODE10
+  value: true
 
 
 steps:
