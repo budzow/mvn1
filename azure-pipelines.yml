@@ -6,6 +6,7 @@
 workspace:
   clean: all
 
+
 trigger:
 - main
 - develop
