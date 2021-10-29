@@ -9,7 +9,7 @@ workspace:
 
 trigger:
 - main
-- develop
+#- develop
 
 pool:
       name: Default
@@ -24,7 +24,7 @@ variables:
 steps:
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'SQ9'
+    SonarQube: 'SQ8'
     scannerMode: 'Other'
 - task: Maven@3
   inputs:
